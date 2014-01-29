@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script>
+var auto_refresh = setInterval(
+function()
+{
+ $.ajaxSetup({ cache: false });
+$('#loaddiv').load(window.location.href);
+}, 2000);
+</script>
+</head>
+<body bgcolor="brown">
+<div id="loaddiv" align="center">
+<h3 style="color:yellow;">Your Portfolio</h3>
+<hr/>
+<iframe src="stocks.html" style="background-color:#d8d8d8;"></iframe>
+</div>
+</body>
+</html>
+
+
